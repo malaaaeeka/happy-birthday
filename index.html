@@ -192,57 +192,127 @@
         /* Mobile devices */
         @media (max-width: 480px) {
             body {
-                padding: 5px;
+                padding: 3px;
+                min-height: 100vh;
             }
 
             .container {
-                padding: 0.5rem;
-                margin: 8px 0; /* Reduced from 10px */
-                max-width: 95%;
+                padding: 0.4rem;
+                margin: 5px 0;
+                max-width: 96%;
             }
 
             .piano {
-                margin: 8px 0; /* Reduced from 10px */
-                padding: 4px 0; /* Reduced from 5px */
+                margin: 6px 0;
+                padding: 3px 0;
             }
 
             .piano-wrapper {
-                min-width: 380px; /* Reduced from 550px */
+                min-width: 320px;
             }
 
             .key {
-                min-width: 26px; /* Reduced from 35px */
-                height: 70px; /* Reduced from 100px */
+                min-width: 24px;
+                height: 50px; /* Much shorter for mobile */
             }
 
             .black-key {
-                width: 18px; /* Reduced from 25px */
-                height: 45px; /* Reduced from 65px */
-                font-size: 9px; /* Reduced from 10px */
+                width: 16px;
+                height: 32px; /* Much shorter for mobile */
+                font-size: 8px;
             }
 
             .label {
-                font-size: 10px; /* Reduced from 12px */
+                font-size: 9px;
             }
 
             .top-text h1 {
-                top: -40px; /* Reduced from -50px */
-                font-size: 16px;
+                top: -30px;
+                font-size: 14px;
             }
 
             .top-text p {
-                top: -20px; /* Reduced from -25px */
-                font-size: 10px;
+                top: -15px;
+                font-size: 9px;
             }
 
             button {
-                padding: 0.5rem 1rem; /* Reduced from 0.6rem 1.2rem */
-                font-size: 0.8rem; /* Reduced from 0.9rem */
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+                min-height: 32px;
             }
 
             .music-note {
-                font-size: 16px; /* Reduced from 18px */
+                font-size: 14px;
             }
+
+            /* Adjust black key positions for mobile */
+            .black-key:nth-child(12) { left: 17px !important; }
+            .black-key:nth-child(13) { left: 42px !important; }
+            .black-key:nth-child(14) { left: 67px !important; }
+            .black-key:nth-child(15) { left: 92px !important; }
+            .black-key:nth-child(16) { left: 117px !important; }
+            .black-key:nth-child(17) { left: 142px !important; }
+            .black-key:nth-child(18) { left: 167px !important; }
+            .black-key:nth-child(19) { left: 192px !important; }
+            .black-key:nth-child(20) { left: 217px !important; }
+            .black-key:nth-child(21) { left: 242px !important; }
+            .black-key:nth-child(22) { left: 267px !important; }
+            .black-key:nth-child(23) { left: 292px !important; }
+            .black-key:nth-child(24) { left: 317px !important; }
+        }
+
+        /* Very small mobile devices */
+        @media (max-width: 360px) {
+            body {
+                padding: 2px;
+            }
+
+            .container {
+                padding: 0.3rem;
+                margin: 3px 0;
+            }
+
+            .piano {
+                margin: 4px 0;
+                padding: 2px 0;
+            }
+
+            .piano-wrapper {
+                min-width: 280px;
+            }
+
+            .key {
+                min-width: 22px;
+                height: 45px;
+            }
+
+            .black-key {
+                width: 14px;
+                height: 28px;
+                font-size: 7px;
+            }
+
+            button {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.7rem;
+                min-height: 28px;
+            }
+
+            /* Adjust black key positions for very small mobile */
+            .black-key:nth-child(12) { left: 15px !important; }
+            .black-key:nth-child(13) { left: 38px !important; }
+            .black-key:nth-child(14) { left: 61px !important; }
+            .black-key:nth-child(15) { left: 84px !important; }
+            .black-key:nth-child(16) { left: 107px !important; }
+            .black-key:nth-child(17) { left: 130px !important; }
+            .black-key:nth-child(18) { left: 153px !important; }
+            .black-key:nth-child(19) { left: 176px !important; }
+            .black-key:nth-child(20) { left: 199px !important; }
+            .black-key:nth-child(21) { left: 222px !important; }
+            .black-key:nth-child(22) { left: 245px !important; }
+            .black-key:nth-child(23) { left: 268px !important; }
+            .black-key:nth-child(24) { left: 291px !important; }
         }
 
         /* Tablets */
@@ -303,26 +373,58 @@
 
         /* Landscape orientation adjustments */
         @media (orientation: landscape) and (max-height: 500px) {
+            body {
+                padding: 2px;
+            }
+
             .container {
-                margin: 5px auto;
+                margin: 2px auto;
+                padding: 0.3rem;
             }
 
             .key {
-                height: 60px; /* Reduced from 80px */
+                height: 35px;
             }
 
             .black-key {
-                height: 40px; /* Reduced from 55px */
+                height: 22px;
             }
 
             .top-text h1 {
-                top: -35px; /* Reduced from -40px */
-                font-size: 14px; /* Reduced from 16px */
+                top: -25px;
+                font-size: 12px;
             }
 
             .top-text p {
-                top: -18px; /* Reduced from -20px */
-                font-size: 10px;
+                top: -12px;
+                font-size: 8px;
+            }
+
+            button {
+                padding: 0.2rem 0.6rem;
+                font-size: 0.65rem;
+                min-height: 24px;
+            }
+        }
+
+        /* Very short landscape screens (phones in landscape) */
+        @media (orientation: landscape) and (max-height: 400px) {
+            .key {
+                height: 30px;
+            }
+
+            .black-key {
+                height: 18px;
+                font-size: 6px;
+            }
+
+            .container {
+                padding: 0.2rem;
+            }
+
+            .piano {
+                margin: 2px 0;
+                padding: 1px 0;
             }
         }
 
